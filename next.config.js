@@ -8,33 +8,8 @@ const nextConfig = {
   redirects: async () => {
     return [
       {
-        source: '/',
-        destination: 'https://gaianinja.webflow.io/',
-        permanent: true,
-      },
-      {
-        source: '/picobo',
-        destination: 'https://gaianinja.webflow.io/picobo',
-        permanent: true,
-      },
-      {
-        source: '/picobo-ecole',
-        destination: 'https://gaianinja.webflow.io/picobo-ecole',
-        permanent: true,
-      },
-      {
-        source: '/a-propos',
-        destination: 'https://gaianinja.webflow.io/a-propos',
-        permanent: true,
-      },
-      {
-        source: '/support',
-        destination: 'https://gaianinja.webflow.io/support',
-        permanent: true,
-      },
-      {
-        source: '/picobo/prof',
-        destination: 'https://gaianinja.webflow.io/picobo/prof',
+        source: '/:path*',
+        destination: 'https://gaianinja.webflow.io/:path*',
         permanent: true,
       },
     ];
